@@ -20,14 +20,21 @@ import org.jsoup.select.Elements;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.Period;
 import java.util.List;
 import java.util.stream.Collectors;
 
 
 public class ParserFromAliExpress {
     public static void main(String[] args) throws IOException {
+        LocalDateTime start = LocalDateTime.now();
         WriteToCsv writeToCsv = new ItemWriteToCsv();
-        writeToCsv.write("https://gpsfront.aliexpress.com/getRecommendingResults.do?callback=jQuery18307708159037100661_1628137061540&widget_id=5547572&platform=pc&limit=12&offset=120&phase=1&productIds2Top=&postback=1015b5ca-71b0-42d7-80f9-9f0086091fa1&_=1628143789515","example.csv");
+        List<Item> items = writeToCsv.getDataFromAliExpress(10);
+        writeToCsv.write(items,"example.csv");
+        LocalDateTime end = LocalDateTime.now();
+        System.out.println(Duration.between(start,end));
 
     }
 }
