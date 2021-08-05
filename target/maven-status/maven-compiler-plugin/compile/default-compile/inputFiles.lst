@@ -1,3 +1,5 @@
-D:\projects\nsm-adapters\ParserFromAliexpress\src\main\java\org\example\model\Item.java
-D:\projects\nsm-adapters\ParserFromAliexpress\src\main\java\org\example\model\Response.java
-D:\projects\nsm-adapters\ParserFromAliexpress\src\main\java\org\example\ParserFromAliExpress.java
+G:\Projects\ParserFromAliexpress\src\main\java\org\example\ParserFromAliExpress.java
+G:\Projects\ParserFromAliexpress\src\main\java\org\example\model\Item.java
+G:\Projects\ParserFromAliexpress\src\main\java\org\example\model\Response.java
+G:\Projects\ParserFromAliexpress\src\main\java\org\example\service\ItemWriteToCsv.java
+G:\Projects\ParserFromAliexpress\src\main\java\org\example\service\WriteToCsv.java

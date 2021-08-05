@@ -1,3 +1,5 @@
 org\example\model\Response.class
+org\example\service\WriteToCsv.class
 org\example\ParserFromAliExpress.class
 org\example\model\Item.class
+org\example\service\ItemWriteToCsv.class
